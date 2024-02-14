@@ -1,0 +1,223 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .heart {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: heartbeat 1s infinite;
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    width: 50px;
+    height: 80px;
+    background-color: #ff69b4;
+    position: absolute;
+    top: 0;
+    border-radius: 50px 50px 0 0;
+  }
+  
+  .heart:before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  .heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: scale(0.75);
+    }
+    20% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(0.75);
+    }
+    60% {
+      transform: scale(1);
+    }
+    80% {
+      transform: scale(0.75);
+    }
+    100% {
+      transform: scale(0.75);
+    }
+  }
+
+  /* card --------------------------------- */
+
+  .card{
+    height: 400px;
+    width: 400px;
+    background-color: #f8c3dd;
+    border-radius: 5%;
+    border-width: 20px;
+    /* box-shadow: 0rem 0rem 1rem 1rem rgba(27, 27, 27, 0.605); */
+    position: relative;
+    left: 160px;
+    z-index: 1;
+    text-align: center;
+    padding: 40px;
+    padding-top: 10px;
+    box-sizing: border-box;
+
+  }
+
+  .hrt1{
+    transform: rotate(310deg);
+    position: absolute;
+    left: 490px;
+    top: 90px;
+  }
+
+  .hrt2{
+    transform: rotate(-312deg);
+    position: absolute;
+    left: 545px;
+    top: 85px;
+  }
+
+  
+  .hrt3{
+    transform: rotate(225deg);
+    position: absolute;
+    left: 486px;
+    top: 150px;
+  }
+
+
+.card-out{
+    height: 320px;
+    width: 320px;
+    background-color: rgb(204, 203, 203);
+    position: relative;
+    border-radius: 5%;
+    left: 20px;
+    text-align: center;
+    display: none;
+
+}
+.inside{
+    height: 280px;
+    width: 280px;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 5%; 
+}
+
+
+h2{
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 2ch;
+}
+
+h1{
+    padding: 30px;
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 25px
+}
+
+h3{
+    padding: 30px;
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 2ch;
+}
+
+.h{
+    position: relative;
+    bottom: 30px;
+}
+
+.h3{
+    position: relative;
+    bottom: 90px;
+}
+h4{
+    font-family:cursive;
+    font-weight: bold;
+}
+
+img{
+    width: 60%;
+
+}
+
+button{
+    position: relative;
+    top: -80px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-family:cursive;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+
+a{
+    position: relative;
+    top: -80px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-family:cursive;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #f8e7ef;
+}
+
+.card-big{
+    height: 320px;
+    width: 320px;
+    position: relative;
+    left: 200px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.card-div{
+    display: flex;
+
+    position: relative;
+    left: 70px;
+    top: 70px;
+
+}
+
+.btn1, .btn2{
+    background-color: #f8c3dd;
+    margin-right: 10px;
+}
+
+.divvv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
